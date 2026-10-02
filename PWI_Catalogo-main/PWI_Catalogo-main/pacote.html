@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticker Packs - PvZ Shop</title>
+    <link rel="stylesheet" href="src/css/style.css">
+</head>
+<body id="shape">
+    <header id="header">
+        <div class="logo-container">
+            <img src="src/assets/images-removebg-preview.png" alt="Logo" width="200px" height="100px">
+            <img src="src/assets/Shopz.png" alt="Shop" width="100px" height="50px">
+        </div>
+        <nav id="nav">
+            <a href="index.html" class="links">Loja Principal</a>
+            <a href="pacote.html" class="links" style="color: #ffb300;">Abrir Pacotes</a>
+        </nav>
+    </header>
+
+    <main class="main-content" style="text-align: center;">
+    <h1 style="color: #ffb300; margin-bottom: 20px;"> Máquina de Pacotes Surpresa</h1>
+    <p style="margin-bottom: 30px; font-size: 1.1rem;">Gasta as tuas moedas para desbloquear variantes aleatórias!</p>
+        <img src="src/assets/Spectacular_Character_Pack.png" alt="pack">
+    <div class="shop-actions">
+        <div class="coin-display" style="display: flex; align-items: center; gap: 6px;">
+            <span>Moedas:</span>
+            <img src="src/assets/money.png" alt="Moeda" class="coin-icon"> 
+            <strong id="player-coins">20000</strong>
+        </div>
+        <button id="buy-pack-btn" style="display: flex; align-items: center; gap: 6px; justify-content: center;">
+             Comprar Pacote (<img src="src/assets/money.png" alt="Moeda" class="coin-icon"> 5.000)
+        </button>
+    </div>
+</main>
+
+
+    <div id="pack-modal" class="pack-modal hidden">
+        <div class="pack-content">
+            <h2> Saiu no Pacote!</h2>
+            <div id="pack-reward"></div>
+            <button id="close-modal">Resgatar</button>
+        </div>
+    </div>
+
+    <script src="src/js/pacote.js"></script>
+</body>
+</html>
